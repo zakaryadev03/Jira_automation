@@ -56,8 +56,7 @@ def createJira():
         }
     })
 
-    response = requests.post(url, headers=headers, auth=auth, data=jira_payload)
-
+    response = requests.request("POST",url, headers=headers, auth=auth, data=jira_payload)
     return response.text, response.status_code
 
 if __name__ == '__main__':
