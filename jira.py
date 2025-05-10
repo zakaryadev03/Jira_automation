@@ -29,7 +29,7 @@ def createJira():
     summary = issue.get("title")
     description_text = issue.get("body", "")
 
-    url = "https://veeramallaabhishek.atlassian.net/rest/api/3/issue"
+    url = "https://zakaryab2003.atlassian.net/rest/api/3/issue"
     auth = HTTPBasicAuth(EMAIL, API_TOKEN)
 
     headers = {
